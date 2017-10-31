@@ -1,13 +1,14 @@
 /*full page setup*/
 
 footer, header, hgroup, nav, section {
-  display: block; }
+  display: block; 
+}
 
 body {
     /*display: flex;
-    flex-direction: column;*/
+    flex-direction: column;
     background-color: white;
-    /*background-color: #89C9C6;*/
+    background-color: #89C9C6;*/
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -32,8 +33,6 @@ body {
 
 
 
-
-
 /*header page*/
 
 #header {
@@ -44,27 +43,30 @@ body {
     /*background-image: url(../images/flowerhome.png);*/
     background-color: #89C9C6;
     background-size: cover;
-    background-position: bottom;
+    /*background-position: bottom;*/
     z-index: 8;
     padding: 0px;
-    margin: 0;
+    height: 90px;
     /*display: flex;
     justify-content: center;*/
 }
 
 .headpics {
     padding: 0px;
-    padding-top: 40px;
     margin: 0px;
-    display: flex;
+    margin-top: 65px;
     flex-direction: column;
-    align-items: flex-start;   
+    align-items: center;  
+    align-content: center;
+    justify-content: center;
 }
 
 .headpic {
     padding: 0px;
     margin: 0px;
-    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /*height: 100%;*/
 }
 
 h4 {
@@ -80,26 +82,24 @@ h4 {
 
 nav {
     list-style: none;
-    width: 100%;
-    background-color: lightcyan;
+    /*width: 100%;*/
+    /*background-color: lightcyan;*/
+    padding: 0px;
     background-color: #80C7C4;
     display: flex;
-    flex-flow: row nowrap;
-    font-weight: 800;
-    justify-content: space-around;
-    align-items: center;
-    /*margin: auto;*/
+    flex-flow: column wrap;
+    font-weight: 900;
+    /*justify-content: space-around;
+    align-items: center;*/
     color: #28403F;
     font-family: 'Rubik', sans-serif;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 0px;
     position: fixed;
-}
-
-#header li a {
-    color: #28403F;
-    text-decoration: none;
-    text-decoration-line: none;
+    margin-bottom: 0px;
+    z-index: 1;
+    height: 20%;
+    width: 100%;
+    align-content: center;
 }
 
 #header a:hover {
@@ -107,10 +107,47 @@ nav {
     text-decoration-line: none;
 }
 
-.logo {
-    font-size: 18px;
+#logo li a {
+    font-size: 40px;
+    /*font-family: 'Vidaloka', serif;
+    /*align-self: flex-start;
+    flex: row wrap;*/
+    font-family: 'Candal', sans-serif;
+    margin: 0px;
+    margin-left: 30px;
+    margin-top: 15px;
+    padding-bottom: 0;
     color: azure;
+    text-decoration: none;
+    text-decoration-line: none;
+    display: block
 }
+
+#links {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    flex-direction:row;
+    /*flex-wrap: nowrap;*/
+    justify-content: space-around;
+    margin: 0px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    padding-top: 0px;
+    margin: 20px 15px 0px 15px;
+}
+
+#links li a {
+    float: clear; 
+    /*align-content: center;*/
+    color: #28403F;
+    margin: 0px;
+    text-decoration: none;
+    text-decoration-line: none;
+    /*align-self: center;*/
+    padding: 0px;
+}
+
+
 
 .headtext {
     padding: 0;
@@ -118,26 +155,49 @@ nav {
 }
 
 .headtext h1 {
-    padding-top: 70px;
-    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 20px;
     margin: 0;
+    font-size: 50px;
+
+    /*font-family: 'Vidaloka', serif;*/
+    z-index: 5;
     /*color: #28403F;*/
 }
 
+.icons {
+    display: flex;
+    justify-content: center;
+    color: darkcyan;
+    font-size: 75px;
+    margin-top: 100px;
+}
+
+.icons i {
+    margin: 15px;
+}
+
+.icons #dark {
+    color: #28403F;
+}
+
 .headtext h2 {
-    padding-top: 90px;
+    padding-top: 0px;
     padding-bottom: 150px;
     line-height: 1.2em;
     margin: 0 0 0px 0;
+    font-family: 'Candal', sans-serif;
 }
 
 .headtext h4 {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     padding-top: 30px;
     padding-bottom: 30px;
     border-radius: 0px;
     font-size: 35px;
+    font-family: 'Rubik', sans-serif;
+    
 }
 
 h1 {
@@ -160,7 +220,7 @@ h1 {
 
 #challenge {
     padding: 0px;
-    margin: 0;
+    margin: 0px;
 }
 
 main {
@@ -175,30 +235,32 @@ main {
     color: black;
     line-height: 1.5em;
     background-color: azure;
+    background-color: darkcyan;
 }
 
 main h2 {
     text-align: center;
-    font-family: 'Rubik', sans-serif;
-    color: #5E767F;
-    color: #28403F;
-    /*color: #1F2459;*/
+    /*font-family: 'Rubik', sans-serif;*/
+    font-family: 'Candal', sans-serif;
+    /*color: #28403F;*/
+    color: azure;
     margin-top: 60px;
     padding: 5px;
     line-height: 1em;
-    font-size: 60px;  
+    font-size: 90px; 
 }
 
 main h3 {
     font-size: 60px;
     line-height: 1.1em;
     padding-top: 10px;
+    font-family: 'Rubik', sans-serif;
+    /*font-family: 'Vidaloka', serif;*/
 }
 
 main a {
     text-decoration: none;
     text-decoration-line: none;
-    
 }
 
 h2 {
@@ -221,27 +283,35 @@ h2 {
 main h4 {
     color: white;
     background-color: #28403F;
-    border-radius: 15px;
+    border-radius: 18px;
     padding: 15px;
-    margin: 20px auto 70px auto;
+    padding-bottom: 20px;
+    margin-top: 35px; 
+    margin-bottom: 70px;
     font-size: 30px;
-    font-family: 'Rubik', sans-serif;
-    text-align: left;
+    /*font-family: 'Rubik', sans-serif;*/
+    /*font-family: 'Vidaloka', serif;*/
+    font-family: 'Candal', sans-serif;
+    text-align: center;
 }
 
-p {
+ main p {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     width: 100%;
     font-size: 20px;
     margin: 0px auto 0px auto;
+    font-size: 30px;
+    line-height: 1.2em;
 }
 
 .dblue {
     color: #1F2459;
+    color: azure;
     font-weight: 400;
     /*font-style: heavy;*/
     font-family: 'Rubik', sans-serif;
+    /*font-family: 'Vidaloka', serif;*/
     font-size: 25px;
 }
 
@@ -249,6 +319,7 @@ h3 {
     color: #80C7C4;
     text-align: center;
     font-family: 'Rubik', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding-top: 55px;
     padding-bottom: 0px;
     font-size: 35px;
@@ -269,18 +340,46 @@ h3 {
 
 #participate h2 {
     text-align: center;
-    font-family: 'Rubik', sans-serif;
+    /*font-family: 'Rubik', sans-serif;*/
+    /*font-family: 'Vidaloka', serif;*/
+    font-family: 'Candal', sans-serif;
+    /*color: #28403F;*/
+    /*color: azure;
+    color: darkcyan;*/
     color: #28403F;
-    color: azure;
     /*color: #1F2459;*/
     padding: 35px;
     padding-top: 90px;
     line-height: 1.1em;
-    font-size: 60px;  
+    font-size: 60px;
     margin-top: 0px;
 }
 
+/*#participate p {
+    color: #28403F;
+}*/
 
+.resourceslink {
+    padding-bottom: 60px;
+    /*padding-left: 15%;*/
+    align-content: center;
+}
+
+.resourceslink li {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    width: 80%;
+    font-size: 30px;
+    margin: 0px auto 0px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /*padding-left: 70px;*/
+    color: azure;
+    color: #28403F;
+    /*color: #28403F;*/
+    line-height: 1.2em;
+}
 
 
 
@@ -290,23 +389,9 @@ h3 {
 #partners {
     padding: 0px;
     margin: 0;
+    margin-top: 0px;
     /*background-color: azure;*/
-}
-
-.resourceslink {
-    padding-bottom: 60px;
-    padding-left: 15%;
-}
-
-.resourceslink li {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    width: 100%;
-    font-size: 20px;
-    margin: 0px auto 0px auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 70px;
+    /*background-color: darkcyan;*/
 }
 
 #partners .page {
@@ -316,12 +401,17 @@ h3 {
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 40px;
+    margin-top: 0px;
 }
 
 #partners h2 {
-    font-size: 60px;
+    font-size: 70px;
     line-height: 1.2em;
-    padding-top: 100px;
+    padding-top: 10px;
+    margin-top: 0;
+    font-family: 'Candal', sans-serif;
+    color: azure;
+    background-color: darkcyan;
 }
 
 #partners .page li {
@@ -338,29 +428,35 @@ h3 {
 /*contact page*/
 
 #contact {
-    padding: 0px;
+    /*padding: 0px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     background-color: #89C9C6;
-    margin: 10px 0 20px 0;
+    background-color: darkcyan;
+    margin: 0px;
+    margin-top: 0px;
 }
 
 #contact h2 {
     font-size: 60px;
+    color: azure;
+    margin-top: 0px;
+    font-family: 'Candal', sans-serif;
 }
 
 .form {
-    color: black;
     /*display: flex;
     flex-direction: column;
     justify-content: center;*/
     font-family: 'Roboto', sans-serif;
+    font-family: 'Vidaloka', serif;
     list-style: none;
     font-size: 30px;
     /*flex-wrap: nowrap;*/
     align-content: center;
+    color: #28403F;
 }
 
 .form li {
@@ -369,6 +465,8 @@ h3 {
     margin: 10px auto;
     float: center;
     text-align: center;
+    color: #89C9C6;
+    
 }
 
 input {
@@ -389,11 +487,16 @@ input {
 
 footer {
     background-color: #89C9C6;
-    min-height: 20px;
-    padding: 30px;
+    min-height: 15px;
+    padding: 5px;
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px;
     position: absolute;
     width: 100%;
+}
+
+footer p {
+    font-family: 'Candal', sans-serif;
+    color: #28403F;
 }
